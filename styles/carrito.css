@@ -116,7 +116,7 @@ button:hover{
 @media (max-width: 600px){
     body{
         background-color: black;
-        font-size: 10px;
+        font-size: 1rem;
     }
     .carrito{
         flex-direction: column;
