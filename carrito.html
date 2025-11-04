@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="./styles/carrito.css">
+</head>
+<body>
+    <div class="container">
+        <section class="carrito">
+            <a href="./index.html">Volver</a>
+            <div class="carrito-productos">
+                <h1>PRODUCTOS</h1>
+                <!-- <div class="carrito-item">
+                    <p>Helado de coco</p>
+                    <strong> 34</strong>
+                </div> -->
+                
+            </div>
+
+            <div class="carrito-formulario">
+
+                <div class="carrito-formulario-datos">
+                    <div>
+                        <p>Total productos: </p>
+                        <p id="total-productos">0</p>
+                    </div>
+                    <div>
+                        <p>Total Bs:  </p>
+                        <p id="total-precio">0</p>
+                    </div>
+                </div>
+
+                <form id="form" method="get">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="nombre" required autocomplete="off">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required autocomplete="off">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="correo" required autocomplete="off">
+                    <label for="telefono">Tel</label>
+                    <input type="tel" name="telefono" id="telefono"  placeholder="telefono" autocomplete="off" required>
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion" id="direccion" placeholder="direccion" autocomplete="off" required>
+                    <button type="submit" id="boton-pedido">Hacer pedido</button>
+                </form>
+            </div>
+        </section>
+    </div>
+  
+</body>
+
+<script type="module" src="./scripts/formCarrito.js"></script>
+</html>
