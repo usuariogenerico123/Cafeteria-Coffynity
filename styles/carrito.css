@@ -112,3 +112,16 @@ button:hover{
     color: white;
     cursor: pointer;
 }
+
+@media (max-width: 600px){
+    body{
+        background-color: black;
+        font-size: 10px;
+    }
+    .carrito{
+        flex-direction: column;
+    }
+
+
+    
+}
