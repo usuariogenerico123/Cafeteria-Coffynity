@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COFFYNITY - Tu Cafetería Favorita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+</head>
+<body>
+  
+<header>
+  <div class="container header-inner">
+    <div class="logo" tabindex="0">COFFYNITY</div>
+    
+    <nav id="primary-navigation" role="navigation">
+      <a href="./index.html" tabindex="0">Inicio</a>
+      <a href="./especialidades.html" tabindex="0">Especialidades</a>
+      <a href="./menu.html" tabindex="0">Menú</a>
+      <a href="./nosotros.html" tabindex="0">Nosotros</a>
+      <a href="./contacto.html" tabindex="0">Contacto</a>
+      <a href="./carrito.html"><img src="https://images.icon-icons.com/1152/PNG/512/1486506235-groceries-online-shopping-cart-e-commerce-shopping-cart_81445.png" alt="" width="30" height="30"><p class="contador"></p></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero" role="banner" aria-label="Imagen principal de cafetería con título y llamada a la acción">
+    <h1>Bienvenido a COFFYNITY</h1>
+    <p>La mejor cafeteria para despertar tus sentidos. Sabor auténtico, ambiente cálido.</p>
+    <a href="./menu.html"><button class="btn-primary" tabindex="0">Explora Nuestro Menú</button></a>
+  </section>
+
+  
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2025 COFFYNITY. Todos los derechos reservados.
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('nav#primary-navigation');
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+    navToggle.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('show');
+  }
+  
+  );
+</script>
+</body>
+<script src="./scripts/loadCarritoCont.js"></script>
+</html>

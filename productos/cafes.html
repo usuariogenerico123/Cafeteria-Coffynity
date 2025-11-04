@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+</head>
+<style>
+    *{
+        list-style: none;
+        text-decoration: none;
+    }
+    .productos-cafes {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d2b48c; /* Color marrón claro */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-cafes h2 {
+    text-align: center;
+    color: #4b3d3d; /* Color marrón oscuro */
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4b3d3d;
+    padding: 15px 0;
+}
+
+.producto:last-child {
+    border-bottom: none;
+}
+
+.producto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.producto h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4b3d3d; /* Color marrón oscuro */
+}
+
+.producto p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.producto button {
+    background-color: #8b5a2b; /* Color marrón */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #7a4e2b; /* Color marrón más oscuro al pasar el mouse */
+}
+
+a img, .contador{
+    position: fixed;
+}
+.contador{
+    margin: 2rem;
+    left: 3rem;
+}
+
+</style>
+<body>
+    
+    <header>
+  
+    <nav id="primary-navigation" role="navigation">
+      <a href="../menu.html" tabindex="0">VOLVER</a>
+      <a href="../carrito.html"><img src="https://images.icon-icons.com/1152/PNG/512/1486506235-groceries-online-shopping-cart-e-commerce-shopping-cart_81445.png" alt="" width="30" height="30"><strong class="contador"></strong></a>
+</nav>
+</div>
+</header>
+
+    <div class="productos-cafes">
+    <h2>Productos de Cafés</h2>
+    <div class="producto">
+        <img src="https://via.placeholder.com/100" alt="Café Espresso">
+        <div>
+            <h3>Café Espresso</h3>
+            <p>Un espresso intenso y aromático.</p>
+            <strong>8 bs</strong>
+            <button class="boton-anadir">Añadir al Carrito</button>
+        </div>
+    </div>
+    
+    <div class="producto">
+        <img src="https://via.placeholder.com/100" alt="Café Latte">
+        <div>
+            <h3>Café Latte</h3>
+            <p>Café latte suave con leche vaporizada.</p>
+            <strong>10 bs</strong>
+            <button class="boton-anadir">Añadir al Carrito</button>
+        </div>
+    </div>
+    
+    <div class="producto">
+        <img src="https://via.placeholder.com/100" alt="Café con Leche">
+        <div>
+            <h3>Café con Leche</h3>
+            <p>Café con leche caliente y espumosa.</p>
+            <strong>8 bs</strong>
+            <button class="boton-anadir">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div class="producto">
+        <img src="https://via.placeholder.com/100" alt="Café de Cereza">
+        <div>
+            <h3>Café frio</h3>
+            <p>Café frio para esos días cálidos, el abrazo frío del café..</p>
+            <strong>8 bs</strong>
+            <button class="boton-anadir">Añadir al Carrito</button>
+        </div>
+    </div>
+</div>
+<script type="module" src="../scripts/events.js"></script>
+<script src="../scripts/loadCarritoCont.js"></script>
+</body>
+</html>
