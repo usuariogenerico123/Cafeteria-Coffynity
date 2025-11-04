@@ -30,7 +30,7 @@ if(localStorage.getItem("productos")){
         product.innerText = productos[0][i].nombre
 
         let precio = document.createElement("strong");
-        precio.innerText = productos[0][i].precio + " Bs";
+        precio.innerText = productos[0][i].precio ;//+ " Bs"
         totalPre += parseInt(productos[0][i].precio);
 
         divItem.appendChild(product);
@@ -107,7 +107,7 @@ form.addEventListener("submit", async (e)=>{
         alert("No hay productos en el carrito");
         return  
     };
-    
+
     sendPedido();
     form.reset();
     
